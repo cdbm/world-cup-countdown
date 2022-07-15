@@ -36,7 +36,7 @@ setInterval(() => {
     }
 
     console.log(msg);
-    if (now.getHours() === 0 && now.getMinutes() === 1) {
+    if (now.getHours() === 0 && now.getMinutes() === 10) {
         tweet(msg);
     }
 
