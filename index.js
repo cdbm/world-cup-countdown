@@ -24,7 +24,7 @@ function tweet(text) {
 setInterval(() => {
     let now = new Date();
     let diff = copa.getTime() - now.getTime();
-    let TotalDays = Math.ceil(diff / (1000 * 3600 * 24));
+    let TotalDays = Math.floor(diff / (1000 * 3600 * 24));
     let msg = ""
 
     if (TotalDays > 1) {
@@ -35,8 +35,8 @@ setInterval(() => {
         msg = "A Copa do Mundo do Qatar começa Hoje!!"
     }
 
-    console.log(msg);
-    if (now.getHours() === 3 && now.getMinutes() === 13) {
+    if (now.getHours() === 3 && now.getMinutes() === 20) {
+        console.log(msg);
         tweet(msg);
     }
 
