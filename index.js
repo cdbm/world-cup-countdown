@@ -11,7 +11,7 @@ var T = new Twitter({
     access_token_secret: process.env.ACCESS_TOKEN_SECRET,
 });
 
-tweet("Hello World!!");
+console.log("started")
 
 function tweet(text) {
 
@@ -36,7 +36,7 @@ setInterval(() => {
     }
 
     console.log(msg);
-    if (now.getHours() === 0 && now.getMinutes() === 7) {
+    if (now.getHours() === 3 && now.getMinutes() === 0) {
         tweet(msg);
     }
 
